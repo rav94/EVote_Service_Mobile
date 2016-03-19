@@ -9,6 +9,20 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1">
+            <Button x:Name="button" 
+                    Content="Button" 
+                    HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch"
+                    Click="button_click"/>
+            
+            <TextBlock x:Name="textBlock" 
+                       TextWrapping="Wrap" 
+                       Text="TextBlock" FontSize="21.333"/>
+        </StackPanel>
     </Grid>
 </Page>
